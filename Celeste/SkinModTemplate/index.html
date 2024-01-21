@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with Images</title>
+    <style>
+
+        h1 {
+            margin-top: 0;
+            font-size: 3rem;
+            color: rgba(240, 248, 255, 0.774);
+            
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: rgba(240, 248, 255, 0.774);
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        p {
+            width: 100%;
+            overflow: auto;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            color: #ffffff70;
+        }
+
+        .bg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(Images/Farewell_BG.png);
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .button-container {
+            margin-top: 50px;
+            display: flex;
+        }
+
+        .page-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #ffffffdc;
+            padding: 10px 20px;
+            background-color: #00000020;
+            border-radius: 5px;
+            margin: 0 10px;
+            width: 20vw;
+            height: fit-content;
+            box-shadow: rgb(7, 7, 12) 0px 13px 27px -5px, rgb(0, 0, 0) 0px 8px 16px -8px;
+            border-radius: 40px;
+        }
+
+        .page-link img {
+            height: 150px;
+        }
+
+        .count {
+            display: flex;
+            align-items: center;
+            color: #bebebead;
+            border-radius: 13px;
+            height: 30px;
+            padding: 0 10px 0 10px;
+            box-shadow: rgb(0, 0, 0) 0px 30px 60px -50px inset, rgba(0, 0, 0, 0) 0px 18px 36px -18px inset;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg">
+
+        <h1>Pick the format that suits your skin the best</h1>
+        
+        <div class="button-container">
+            <a href="" class="page-link">
+                <h3>No backpack only</h3>
+                <img src="Images/No-Backpack.png" alt="Button 1">
+                <p>
+                    (recommended) This template will always use the no backpack sprite. All missing animations are filled in from the backpack sprite.
+                </p>
+                <div class="count">491 sprites</div>
+            </a>
+            <a href="Backpack only/SkinModTemplate.zip" class="page-link">
+                <h3>Backpack only</h3>
+                <img src="Images/Backpack.png" alt="Button 1">
+                <p>
+                    (recommended) This template will always use the backpack sprite. The sprite doesn't lose its backpack in chapter 7 or 9.
+                </p>
+                <div class="count">491 sprites</div>
+            </a>
+            <a href="" class="page-link">
+                <h3>Full skinmod</h3>
+                <img src="Images/Full.png" alt="Button 2">
+                <p>
+                    Use this if you want your character to have a separate set of sprites without a backpack. Works just like the normal game.
+                </p>
+                <div class="count">786 sprites</div>
+            </a>
+            <a href="" class="page-link">
+                <h3>Reduced spritecount</h3>
+                <img src="Images/Reduced.png" alt="Button 3">
+                <p>
+                    This template changes, replaces and reuses animations to reduce the sprite count as much as possible. Get 85% of the quality with 1/4th of the work.
+                </p>
+                <div class="count">198 sprites</div>
+            </a>
+        </div>
+
+        <footer>
+            The sprite count includes only sprites where madeline is seen directly and is not accurate I just estimated something
+        </footer>
+    </div>
+
+</body>
+</html>
