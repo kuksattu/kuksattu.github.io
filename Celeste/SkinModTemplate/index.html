@@ -6,11 +6,24 @@
     <title>Skin Mod Template Picker</title>
     <style>
 
+        body {
+            margin: 0;
+        }
+        .bg {
+            background-image: url(Images/Farewell_BG.png);
+            background-size: cover;
+            position: fixed;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -100;
+        }
+
         h1 {
-            margin-top: 0;
             font-size: 3rem;
             color: rgba(240, 248, 255, 0.774);
-            
+            text-align: center;
+            margin: 15vh 40px 15vh 40px;
         }
 
         h3 {
@@ -19,40 +32,26 @@
             color: rgba(240, 248, 255, 0.774);
         }
 
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
 
-        p {
-            width: 100%;
-            overflow: auto;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            color: #ffffff70;
-        }
-
-        .bg {
+        .wrapper {
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: url(Images/Farewell_BG.png);
-            height: 100%; 
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
         }
 
-        .button-container {
-            margin-top: 50px;
-            display: flex;
+        .grid-container{
+            display: grid;
+            row-gap: 30px;
+            column-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            padding: 10px;
+            width: 98%;
         }
 
-        .page-link {
+        .grid-container a {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -62,14 +61,9 @@
             background-color: #00000030;
             border-radius: 5px;
             margin: 0 10px;
-            width: 20vw;
             height: fit-content;
             box-shadow: rgb(7, 7, 12) 0px 13px 27px -5px, rgb(0, 0, 0) 0px 8px 16px -8px;
             border-radius: 40px;
-        }
-
-        .page-link img {
-            height: 150px;
         }
 
         .count {
@@ -81,15 +75,25 @@
             padding: 0 10px 0 10px;
             box-shadow: rgb(0, 0, 0) 0px 30px 60px -50px inset, rgba(0, 0, 0, 0) 0px 18px 36px -18px inset;
         }
+
+        @media only screen and (max-width: 600px) { 
+            h1 {
+            margin-top: 0;
+            font-size: 2.5rem;
+            color: rgba(240, 248, 255, 0.774);
+            text-align: center;
+            margin: 35px 20px 35px 20px;
+        }
+        }
     </style>
 </head>
 <body>
 
-    <div class="bg">
-
+    <div class="bg"></div>
+    
+    <div class="wrapper">
         <h1>Pick the format that suits your skin the best</h1>
-        
-        <div class="button-container">
+        <div class="grid-container">
             <a href="No backpack only/SkinModTemplate-No-Backpack-Only.zip" class="page-link">
                 <h3>No-backpack only</h3>
                 <img src="Images/No-Backpack.png" alt="Button 1">
@@ -98,7 +102,7 @@
                 </p>
                 <div class="count">491 sprites</div>
             </a>
-            <a href="Backpack Only/SkinModTemplate-Backpack-Only.zip" class="page-link">
+            <a href="Backpack only/SkinModTemplate-Backpack-Only.zip" class="page-link">
                 <h3>Backpack only</h3>
                 <img src="Images/Backpack.png" alt="Button 1">
                 <p>
@@ -122,12 +126,8 @@
                 </p>
                 <div class="count">198 sprites</div>
             </a>
-        </div>
-
-        <footer>
-            The sprite count includes only sprites where madeline is seen directly and is not accurate I just estimated them lol
-        </footer>
+          </div>
     </div>
-
+    
 </body>
 </html>
