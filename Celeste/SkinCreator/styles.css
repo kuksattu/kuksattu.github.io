@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --arms: #3f3f74;
+    --hand1: #eec39a;
+    --hand2: #d9a066;
+    --head1: #eec39a;
+    --head2: #d9a066;
+    --shirt1: #5b6ee1;
+    --waist1: #873724;
+    --waist2: #45283c;
+    --legstip: #d9a066;
+    --legs1: #873724;
+    --legs2: #45283c;
+    --legslower: #873724;
+    --neckpadding: #45283c;
+    --hair1: #ac3232;
+    --hair2: #5a1a1a;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #686868;
+}
+
+button {
+    max-width: 200px;
+    margin: 30px 0 0;
+    padding: 10px 0 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 20px); /* Adjust the size of squares here */
+    grid-template-rows: repeat(16, 20px);    /* Adjust the size of squares here */
+}
+
+.grid-item {
+    width: 20px;
+    height: 20px;
+    background-color: #686868;
+    transition: 0.1s;
+}
+
+#outline {
+    background-color: #040000;
+}
+
+#arms {
+    background-color: var(--arms);
+}
+
+#hand1 {
+    background-color: var(--hand1);
+}
+
+#hand2 {
+    background-color: var(--hand2);
+}
+
+#head1 {
+    background-color: var(--head1);
+}
+
+#head2 {
+    background-color: var(--head2);
+}
+
+#shirt1 {
+    background-color: var(--shirt1);
+}
+
+#waist1 {
+    background-color: var(--waist1);
+}
+
+#waist2 {
+    background-color: var(--waist2);
+}
+
+#legstip {
+    background-color: var(--legstip);
+}
+
+#legs1 {
+    background-color: var(--legs1);
+}
+
+#legs2 {
+    background-color: var(--legs2);
+}
+
+#legslower {
+    background-color: var(--legslower);
+}
+
+#neckpadding {
+    background-color: var(--neckpadding);
+}
+
+#hair1 {
+    background-color: var(--hair1);
+}
+
+#hair2 {
+    background-color: var(--hair2);
+}
