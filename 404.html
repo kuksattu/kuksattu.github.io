@@ -1,9 +1,23 @@
 <script>
+    
+    const substitutions = {
+        "https://kuksattu.github.io/Celeste/SkinModTemplate": "https://kuksattu.github.io/celeste/skin-mod-template",
+    }
+    
     window.onload = () => {
-        currentURL = window.location.href;
+        let currentURL = window.location.href;
+
+        for (const [k, v] of Object.entries(substitutions)) {
+            if(currentURL.startsWith(k)) location.replace(v);
+        }
+
         lowerCaseURL = currentURL.toLowerCase();
         if (currentURL != lowerCaseURL) {
             location.replace(lowerCaseURL);
         }
     };
 </script>
+
+<body style="background-color: #1f1e25;">
+    
+</body>
