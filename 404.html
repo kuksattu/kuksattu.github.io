@@ -7,8 +7,6 @@
     window.onload = () => {
         let currentURL = window.location.href;
 
-        currentURL = "https://kuksattu.github.io/Celeste/SkinModTemplate"
-
         for (const [k, v] of Object.entries(substitutions)) {
             if(currentURL.startsWith(k)) {
                 location.replace(v);
