@@ -9,7 +9,7 @@ body {
 }
 
 .bg {
-    background-image: url(Images/Farewell_BG.png);
+    background-image: url(images/Farewell_BG.png);
     background-size: cover;
     position: fixed;
     margin: 0;
